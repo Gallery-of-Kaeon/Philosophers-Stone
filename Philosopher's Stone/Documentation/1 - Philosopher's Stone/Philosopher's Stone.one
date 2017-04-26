@@ -1,0 +1,172 @@
+-
+	Philosopher's Stone
+-
+	-
+		Overview
+	-
+		-
+			A Philosopher's Stone is a special type of data structure that acts as a wrapper for an
+			isolated system.
+			
+			Philosopher's Stones may be connected to form a graph, called a Philosopher's Atlas.
+			The functions in a Philosopher's Stone are written to allow communication between all
+			nodes in the Philosopher's Atlas regardless of its structure.
+			
+			Once connected, the Philosopher's Stones may communicate with each other via packets.
+		-
+	-
+		Member Variables
+	-
+		-
+			Philosopher's Stones
+		-
+			-
+				This variable stores a list of references to all of the Philosopher's Stones that
+				exist in the system.
+			-
+			-
+				Type
+			-
+				-
+					List
+				-
+					-
+						Type
+					-
+						-
+							Reference
+						-
+							-
+								Type
+							-
+								-
+									Philosopher's Stone
+								-
+		-
+			Public Connections
+		-
+			-
+				This variable stores a list of references to the Philosopher's Stones connected to
+				the Philosopher's Stone containing it that may be accessed through any call
+				regardless of which Philosopher's Stone it was sent from.
+			-
+			-
+				Type
+			-
+				-
+					List
+				-
+					-
+						Type
+					-
+						-
+							Reference
+						-
+							-
+								Type
+							-
+								-
+									Philosopher's Stone
+								-
+		-
+			Private Connections
+		-
+			-
+				This variable stores a list of references to the Philosopher's Stones connected to
+				the Philosopher's Stone containing it that may only be accessed through calls made
+				from the Philosopher's Stone containing them.
+			-
+			-
+				Type
+			-
+				-
+					List
+				-
+					-
+						Type
+					-
+						-
+							Reference
+						-
+							-
+								Type
+							-
+								-
+									Philosopher's Stone
+								-
+	-
+		Functions
+	-	
+		-
+			Non-Overridable Functions
+		-
+			-
+				Call
+			-
+				-
+					This function traverses the Philosopher's Atlas and returns a list of all the
+					objects returned by each Philosopher's Stone's On Call function.
+				-
+				-
+					Parameters
+				-
+					-
+						Packet
+					-
+						-
+							Type
+						-
+							-
+								Generic Object
+							-
+				-
+					Returns
+				-
+					-
+						Data
+					-
+						-
+							Type
+						-
+							-
+								List
+							-
+								-
+									Type
+								-
+									-
+										Generic Object
+									-
+		-
+			Overridable Functions
+		-
+			-
+				On Call
+			-
+				-
+					This function returns a single object based on a packet of objects passed in.
+				-
+				-
+					Parameters
+				-
+					-
+						Packet
+					-
+						-
+							Type
+						-
+							-
+								Generic Object
+							-
+				-
+					Returns
+				-
+					-
+						Data
+					-
+						-
+							Type
+						-
+							-
+								Generic Object
+							-
