@@ -5,95 +5,17 @@
 		Overview
 	-
 		-
-			A Philosopher's Stone is a special type of data structure that acts as a wrapper for an
-			isolated system.
-			
+			A Philosopher's Stone is an object that acts as a wrapper for an isolated system within
+			a larger system.
+		-
+	-
+		Philosopher's Atlas
+	-
+		-
 			Philosopher's Stones may be connected to form a graph, called a Philosopher's Atlas.
-			The functions in a Philosopher's Stone are written to allow communication between all
-			nodes in the Philosopher's Atlas regardless of its structure.
-			
-			Once connected, the Philosopher's Stones may communicate with each other via packets.
+			Connections between Philosopher's Stones in a Philosopher's Atlas may be either public
+			or private.
 		-
-	-
-		Member Variables
-	-
-		-
-			Philosopher's Stones
-		-
-			-
-				This variable stores a list of references to all of the Philosopher's Stones that
-				exist in the system.
-			-
-			-
-				Type
-			-
-				-
-					List
-				-
-					-
-						Type
-					-
-						-
-							Reference
-						-
-							-
-								Type
-							-
-								-
-									Philosopher's Stone
-								-
-		-
-			Public Connections
-		-
-			-
-				This variable stores a list of references to the Philosopher's Stones connected to
-				the Philosopher's Stone containing it that may be accessed through any call
-				regardless of which Philosopher's Stone it was sent from.
-			-
-			-
-				Type
-			-
-				-
-					List
-				-
-					-
-						Type
-					-
-						-
-							Reference
-						-
-							-
-								Type
-							-
-								-
-									Philosopher's Stone
-								-
-		-
-			Private Connections
-		-
-			-
-				This variable stores a list of references to the Philosopher's Stones connected to
-				the Philosopher's Stone containing it that may only be accessed through calls made
-				from the Philosopher's Stone containing them.
-			-
-			-
-				Type
-			-
-				-
-					List
-				-
-					-
-						Type
-					-
-						-
-							Reference
-						-
-							-
-								Type
-							-
-								-
-									Philosopher's Stone
-								-
 	-
 		Functions
 	-	
@@ -104,39 +26,23 @@
 				Call
 			-
 				-
-					This function traverses the Philosopher's Atlas and returns a list of all the
-					objects returned by each Philosopher's Stone's On Call function.
+					This function takes a list of objects as an argument.
+					
+					It traverses the Philosopher's Atlas starting at both the public and
+					private connections of the Philosopher's Stone it was called from. For each
+					Philosopher's Stone it traverses across from that point onward, it will
+					only traverse across the Philosopher's Stone's public connections. It will
+					not traverse across the same Philosopher's Stone more than once.
+					
+					At each Philosopher's Stone it traverses across, it will call the
+					Philosopher's Stone's On Call function using the list of objects it took as
+					an argument. If the On Call function does not return a null value, it will
+					append the returned object to a list.
+					
+					After it has finished traversing the Philosopher's Atlas, it will return the
+					list of all of the objects returned by the On Call functions of the
+					Philosopher's Stones it traversed across.
 				-
-				-
-					Parameters
-				-
-					-
-						Packet
-					-
-						-
-							Type
-						-
-							-
-								Generic Object
-							-
-				-
-					Returns
-				-
-					-
-						Data
-					-
-						-
-							Type
-						-
-							-
-								List
-							-
-								-
-									Type
-								-
-									-
-										Generic Object
-									-
 		-
 			Overridable Functions
 		-
@@ -144,29 +50,11 @@
 				On Call
 			-
 				-
-					This function returns a single object based on a packet of objects passed in.
+					This function takes a list of objects as an argument.
+					
+					It may be overridden by an individual Philosopher's Stone to perform
+					operations and return a single object based on the list of objects it took
+					as an argument.
+					
+					By default, it performs no operations and returns a null value.
 				-
-				-
-					Parameters
-				-
-					-
-						Packet
-					-
-						-
-							Type
-						-
-							-
-								Generic Object
-							-
-				-
-					Returns
-				-
-					-
-						Data
-					-
-						-
-							Type
-						-
-							-
-								Generic Object
-							-
