@@ -25,7 +25,7 @@ For any questions or comments please email the following address: kaeon.ace@gmai
 
 ## FAQs
 
-### How it works
+### How it does it work?
 
 Individual Philosopher's Stones act as wrappers for components of larger systems.
 
