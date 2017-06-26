@@ -21,7 +21,9 @@ https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's
 
 ## Contact info
 
-For any questions or comments please email the following address: kaeon.ace@gmail.com
+For any questions or comments please email the following address:
+
+kaeon.ace@gmail.com
 
 ## FAQs
 
