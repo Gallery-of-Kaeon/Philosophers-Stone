@@ -13,7 +13,7 @@ This repository contains the specification and APIs for the Philosopher's Stone.
 
 #### Specification
 
-https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Documentation
+https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Specification
 
 #### APIs
 
