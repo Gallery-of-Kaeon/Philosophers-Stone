@@ -1,7 +1,5 @@
 # Philosopher's Stone
 
-## What it is
-
 The Philosopher's Stone is an object upon which a software architecture called the Philosopher's Atlas is composed.
 The Philosopher's Atlas allows for greater fault tolerance and modularity in sofware development.
 
@@ -11,13 +9,9 @@ This repository contains the specification and APIs for the Philosopher's Stone.
 
 ### Direct links
 
-#### Specification
+[Specification](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Specification)
 
-https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Specification
-
-#### APIs
-
-https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/API
+[APIs](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/API)
 
 ## Contact info
 
