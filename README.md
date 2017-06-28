@@ -9,7 +9,7 @@ This repository contains documentation and APIs for the Philosopher's Stone.
 
 ### Direct links
 
-[Documentation](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Documentation)
+[Documentation](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/Philosopher's%20Stone/Documentation/Philosopher's%20Stone.md)
 
 [APIs](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/API)
 
