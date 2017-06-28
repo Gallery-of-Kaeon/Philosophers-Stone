@@ -1,6 +1,6 @@
 # Philosopher's Stone
 
-The Philosopher's Stone is a special type of graph node acting as an interface between an isolated system and a larger system.
+The Philosopher's Stone is a special type of graph node that acts as an interface between an isolated system and a larger system.
 
 ## Core Functionality
 

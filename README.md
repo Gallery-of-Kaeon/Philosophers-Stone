@@ -29,3 +29,14 @@ Philosopher's Stones may be connected to one another to form a graph called a Ph
 Connections between Philosopher's Stones are one way and may either be public or private.
 
 Once connected, the Philosopher's Stones may communicate with each other by sending packets throughout the graph.
+
+### What advantages are there to using Philosopher's Stones?
+
+Philosopher's Stones allow the various components of an application to be isolated.
+Entire components of your application can be added and removed without causing the application to crash.
+You can even program parts of your program to interact with other parts that haven't been implemented yet.
+
+For example,
+lets say stone A activates a function in stone B by sending a packet to it.
+If you decide to modify what happens after the packet is sent,
+you can replace stone B with stone C without modifying stone A.
