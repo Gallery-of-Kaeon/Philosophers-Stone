@@ -1,4 +1,4 @@
-[HOME](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/README.md)
+[Home](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/README.md)
 
 # Philosopher's Stone Documentation
 
