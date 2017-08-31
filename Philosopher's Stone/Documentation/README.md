@@ -1,4 +1,6 @@
-# Philosopher's Stone
+[HOME](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/README.md)
+
+# Philosopher's Stone Documentation
 
 The Philosopher's Stone is a special type of graph node that acts as an interface between an isolated system and a larger system.
 
