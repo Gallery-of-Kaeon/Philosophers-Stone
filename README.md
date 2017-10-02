@@ -47,4 +47,4 @@ Yes!
 The other two projects on this github account make use of the Philosopher's Stone.
 
 The [Kaeon FUSION](https://github.com/Gallery-of-Kaeon/Kaeon-FUSION/blob/master/README.md) interpreter is built using Philosopher's Stones,
-and the [ACE Game Engine Model](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/blob/master/Kaeon%20ACE/Game%20Engine%20Model/README.md) makes use of them as well.
+and the [ACE Game Engine Model](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/blob/master/Kaeon%20ACE/Documentation/Game%20Engine%20Model/README.md) makes use of them as well.
