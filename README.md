@@ -5,9 +5,11 @@ The Philosopher's Atlas allows for greater fault tolerance and modularity in sof
 
 ## Contents of this repository
 
-This repository contains documentation and APIs for the Philosopher's Stone.
+This repository contains the specification, documentation, and APIs for the Philosopher's Stone.
 
 ### Direct links
+
+[Specification](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Specification/Philosopher's%Stone%20of%20Computation.one)
 
 [Documentation](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/Philosopher's%20Stone/Documentation/README.md)
 

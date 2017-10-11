@@ -1,0 +1,63 @@
+-
+	Philosopher's Stone of Computation
+-
+	-
+		Philosophy
+	-
+		-
+			A Philosopher's Stone of Computation is an object that acts as a wrapper for an
+			isolated system within a larger system.
+		-
+	-
+		Principles
+	-
+		-
+			Philosopher's Atlas
+		-
+			-
+				Philosopher's Stones may be connected to form a graph, called a Philosopher's
+				Atlas. Connections between Philosopher's Stones in a Philosopher's Atlas may be
+				either public or private.
+			-
+		-
+			Functions
+		-	
+			-
+				Non-Overridable Functions
+			-
+				-
+					Call
+				-
+					-
+						This function takes an object as an argument.
+						
+						It traverses the Philosopher's Atlas starting at both the public and
+						private connections of the Philosopher's Stone it was called from. For each
+						Philosopher's Stone it traverses across from that point onward, it will
+						only traverse across the Philosopher's Stone's public connections. It will
+						not traverse across the same Philosopher's Stone more than once.
+						
+						At each Philosopher's Stone it traverses across, it will call the
+						Philosopher's Stone's On Call function using the object it took as an
+						argument. If the On Call function does not return a null value, it will
+						append the returned object to a list.
+						
+						After it has finished traversing the Philosopher's Atlas, it will return
+						the list of all of the objects returned by the On Call functions of the
+						Philosopher's Stones it traversed across.
+					-
+			-
+				Overridable Functions
+			-
+				-
+					On Call
+				-
+					-
+						This function takes an object as an argument.
+						
+						It may be overridden by an individual Philosopher's Stone to perform
+						operations and return a single object based on the object it took as an
+						argument.
+						
+						By default, it performs no operations and returns a null value.
+					-
