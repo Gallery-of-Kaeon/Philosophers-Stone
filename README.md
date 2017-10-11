@@ -9,7 +9,7 @@ This repository contains the specification, documentation, and APIs for the Phil
 
 ### Direct links
 
-[Specification](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Specification/Philosopher's%Stone%20of%20Computation.one)
+[Specification](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/tree/master/Philosopher's%20Stone/Specification/Philosopher's%20Stone%20of%20Computation.one)
 
 [Documentation](https://github.com/Gallery-of-Kaeon/Philosophers-Stone/blob/master/Philosopher's%20Stone/Documentation/README.md)
 
