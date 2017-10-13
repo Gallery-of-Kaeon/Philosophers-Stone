@@ -37,7 +37,7 @@ public class PhilosophersStoneUtilities {
 		
 		for(int i = 0; i < stone.tags.size(); i++) {
 			
-			if(stone.tags.get(i).equals(tag))
+			if(formatTag(stone.tags.get(i)).equals(tag))
 				return true;
 		}
 		
