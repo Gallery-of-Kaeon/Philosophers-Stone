@@ -46,7 +46,7 @@ you can replace stone B with stone C without modifying stone A.
 ### Has the Philosopher's Stone ever actually been used for anything?
 
 Yes!
-Two of the other projects on this github account make use of the Philosopher's Stone.
+Three of the other projects on this github account make use of the Philosopher's Stone.
 
 The [Kaeon FUSION](https://github.com/Gallery-of-Kaeon/Kaeon-FUSION/blob/master/README.md) interpreter is built using Philosopher's Stones,
 and the [ACE Game Engine Model](https://github.com/Gallery-of-Kaeon/Kaeon-ACE/blob/master/Kaeon%20ACE/Documentation/Game%20Engine%20Model/README.md) and [SOUL](https://github.com/Gallery-of-Kaeon/SOUL/blob/master/README.md) make use of them as well.
