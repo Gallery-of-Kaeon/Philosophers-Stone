@@ -1,0 +1,187 @@
+Standard Philosopher~'s Stone
+	
+	Philosophy
+	
+		-
+			The standard Philosopher's Stone possesses functionality that exceeds the basic
+			Philosopher's Stone of Computation.
+		-
+	
+	Principles
+		
+		Tags
+			
+			-
+				The standard Philosopher's Stone contains a list of strings for identification.
+				Letter case and whitespace is irrelevant in tags.
+			-
+		
+		On Call Function
+			
+			-
+				The on call function provided by the standard Philosopher's Stone should take a
+				list of undefined objects instead of a single undefined object.
+			-
+		
+		Additional Functions
+		
+			Call
+			
+				-
+					This function takes a list of objects as an argument.
+					
+					It traverses the Philosopher's Atlas starting at both the public and private
+					connections of the Philosopher's Stone it was called from. For each
+					Philosopher's Stone it traverses across from that point onward, it will only
+					traverse across the Philosopher's Stone's public connections. It will not
+					traverse across the same Philosopher's Stone more than once.
+					
+					At each Philosopher's Stone it traverses across, it will call the Philosopher's
+					Stone's On Call function using the list of objects it took as an argument. If
+					the On Call function does not return a null value, it will append the returned
+					object to a list.
+					
+					After it has finished traversing the Philosopher's Atlas, it will return the
+					list of all of the objects returned by the On Call functions of the
+					Philosopher's Stones it traversed across.
+				-
+			
+			To String
+				
+				-
+					This function returns a string representing the state of the Philosopher's
+					Stone.
+				-
+			
+			Tag
+				
+				-
+					This function takes a string as an argument and adds the string as a tag to the
+					Philosopher's Stone it was called from.
+				-
+			
+			Remove Tag
+				
+				-
+					This function takes a string as an argument and removes and tag that matches
+					the string from Philosopher's Stone it was called from.
+				-
+			
+			Get Tags
+				
+				-
+					This function returns the tags of the Philosopher's Stone it was called from.
+				-
+			
+			Is Tagged
+				
+				-
+					This function takes a string as an argument and returns true if the
+					Philosopher's Stone has a tag that matches the string, and false otherwise.
+				-
+				
+			Publicly Connect
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					establishes a public connection from the stone it was called from to the
+					referenced stone.
+				-
+				
+			Privately Connect
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					establishes a private connection from the stone it was called from to the
+					referenced stone.
+				-
+				
+			Disconnect
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					severs any connection from the stone it was called from to the referenced
+					stone.
+				-
+				
+			Publicly Connect Mutually
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					establishes a public connection from the stone it was called from to the
+					referenced stone, as well as a public connection from the referenced stone to
+					the stone it was called from.
+				-
+				
+			Privately Connect Mutually
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					establishes a private connection from the stone it was called from to the
+					referenced stone, as well as a private connection from the referenced stone to
+					the stone it was called from.
+				-
+				
+			Disconnect Mutually
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					severs any connection from the stone it was called from to the referenced
+					stone, as well as any connection from the referenced stone to the stone it was
+					called from.
+				-
+			
+			Destroy
+				
+				-
+					This function mutually disconnects all Philosopher's Stones from the
+					Philosopher's Stone it was called on and removes the Philosopher's Stone it was
+					called on from the system.
+				-
+			
+			Get Connections
+				
+				-
+					This function returns a list of references to all of the Philosopher's Stones
+					connected to the Philopher's Stone it was called on.
+				-
+				
+			Is Publicly Connected
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					returns true if the stone it was called on is publicly connected to the
+					referenced stone, and returns false otherwise.
+				-
+				
+			Is Privately Connected
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					returns true if the stone it was called on is privately connected to the
+					referenced stone, and returns false otherwise.
+				-
+				
+			Is Connected
+				
+				-
+					This function takes a reference to a Philosopher's Stone as an argument and
+					returns true if the stone it was called on is connected to the referenced
+					stone, and returns false otherwise.
+				-
+			
+			Get
+				
+				-
+					This function takes a list of strings and traverses the Philosopher's Atlas
+					starting at the stone it was called from, returning a list of all the stones it
+					traversed across that had all of the specified tags.
+				-
+			
+			Has
+				
+				-
+					This function takes a list of strings and traverses the Philosopher's Atlas
+					starting at the stone it was called from, returning true if it traversed across
+					a stone that had all of the specified tags, and returning false otherwise.
+				-
