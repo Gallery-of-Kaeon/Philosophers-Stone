@@ -26,25 +26,21 @@
 				Non-Overridable Functions
 			-
 				-
-					Call
+					Get Atlas
 				-
 					-
-						This function takes an object as an argument.
+						The get atlas function traverses across the philosopher's atlas starting at
+						the philosopher's stone it was called from.
 						
-						It traverses the Philosopher's Atlas starting at both the public and
-						private connections of the Philosopher's Stone it was called from. For each
-						Philosopher's Stone it traverses across from that point onward, it will
-						only traverse across the Philosopher's Stone's public connections. It will
-						not traverse across the same Philosopher's Stone more than once.
+						It will first traverse across both the public and private connections of
+						the philosopher's stone it was called from. For each philosopher's stone it
+						traverses across from that point onward, it will only traverse across the
+						philosopher's stone's public connections. It will not traverse across the
+						same philosopher's stone more than once.
 						
-						At each Philosopher's Stone it traverses across, it will call the
-						Philosopher's Stone's On Call function using the object it took as an
-						argument. If the On Call function does not return a null value, it will
-						append the returned object to a list.
-						
-						After it has finished traversing the Philosopher's Atlas, it will return
-						the list of all of the objects returned by the On Call functions of the
-						Philosopher's Stones it traversed across.
+						When there are no more philopher's stones that it is able to traverse
+						across, it will return a list of all of the philosopher's stones it
+						traversed across.
 					-
 			-
 				Overridable Functions
