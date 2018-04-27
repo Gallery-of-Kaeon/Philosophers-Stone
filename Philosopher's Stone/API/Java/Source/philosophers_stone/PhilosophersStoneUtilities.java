@@ -1,6 +1,7 @@
 package philosophers_stone;
 
 import java.util.ArrayList;
+import java.util.Hashtable;
 
 public class PhilosophersStoneUtilities {
 	
@@ -98,11 +99,19 @@ public class PhilosophersStoneUtilities {
 	
 	public static void destroy(PhilosophersStone stone) {
 		
-		for(int i = 0; i < stone.publicConnections.size(); i++)
+		for(int i = 0; i < stone.publicConnections.size(); i++) {
+			
 			disconnectMutually(stone, stone.publicConnections.get(i));
+			
+			i--;
+		}
 		
-		for(int i = 0; i < stone.privateConnections.size(); i++)
+		for(int i = 0; i < stone.privateConnections.size(); i++) {
+			
 			disconnectMutually(stone, stone.privateConnections.get(i));
+			
+			i--;
+		}
 	}
 	
 	public static boolean isConnected(PhilosophersStone stone, PhilosophersStone connection) {
@@ -161,12 +170,12 @@ public class PhilosophersStoneUtilities {
 	
 	public static ArrayList<PhilosophersStone> get(PhilosophersStone stone, ArrayList<String> tags) {
 		
-		tags = formatTags(tags);
-		
 		if(tags == null)
 			return new ArrayList<PhilosophersStone>();
 		
-		ArrayList<PhilosophersStone> path = new ArrayList<PhilosophersStone>();
+		tags = formatTags(tags);
+		
+		Hashtable<Integer, PhilosophersStone> path = new Hashtable<Integer, PhilosophersStone>();
 		ArrayList<PhilosophersStone> stones = new ArrayList<PhilosophersStone>();
 	
 		getTraverse(stone, true, tags, path, stones);
@@ -176,7 +185,7 @@ public class PhilosophersStoneUtilities {
 	
 	public static ArrayList<PhilosophersStone> getAtlas(PhilosophersStone stone) {
 	
-		ArrayList<PhilosophersStone> path = new ArrayList<PhilosophersStone>();
+		Hashtable<Integer, PhilosophersStone> path = new Hashtable<Integer, PhilosophersStone>();
 		ArrayList<PhilosophersStone> stones = new ArrayList<PhilosophersStone>();
 	
 		getTraverse(stone, true, null, path, stones);
@@ -198,7 +207,7 @@ public class PhilosophersStoneUtilities {
 		
 		tags = formatTags(tags);
 		
-		ArrayList<PhilosophersStone> path = new ArrayList<PhilosophersStone>();
+		Hashtable<Integer, PhilosophersStone> path = new Hashtable<Integer, PhilosophersStone>();
 	
 		return hasTraverse(stone, true, tags, path);
 	}
@@ -215,7 +224,7 @@ public class PhilosophersStoneUtilities {
 	
 	public static ArrayList<Object> call(PhilosophersStone stone, ArrayList<Object> packet) {
 	
-		ArrayList<PhilosophersStone> path = new ArrayList<PhilosophersStone>();
+		Hashtable<Integer, PhilosophersStone> path = new Hashtable<Integer, PhilosophersStone>();
 		ArrayList<Object> calls = new ArrayList<Object>();
 	
 		callTraverse(stone, true, packet, path, calls);
@@ -237,7 +246,7 @@ public class PhilosophersStoneUtilities {
 		return stone.onCall(packet);
 	}
 	
-	private static int getIndexOfPublicConnection(PhilosophersStone stone, PhilosophersStone connection) {
+	public static int getIndexOfPublicConnection(PhilosophersStone stone, PhilosophersStone connection) {
 	
 		for(int i = 0; i < stone.publicConnections.size(); i++) {
 	
@@ -248,7 +257,7 @@ public class PhilosophersStoneUtilities {
 		return -1;
 	}
 	
-	private static int getIndexOfPrivateConnection(PhilosophersStone stone, PhilosophersStone connection) {
+	public static int getIndexOfPrivateConnection(PhilosophersStone stone, PhilosophersStone connection) {
 	
 		for(int i = 0; i < stone.privateConnections.size(); i++) {
 	
@@ -259,17 +268,17 @@ public class PhilosophersStoneUtilities {
 		return -1;
 	}
 	
-	private static void callTraverse(
+	public static void callTraverse(
 			PhilosophersStone stone,
 			boolean init,
 			ArrayList<Object> packet,
-			ArrayList<PhilosophersStone> path,
+			Hashtable<Integer, PhilosophersStone> path,
 			ArrayList<Object> calls) {
 	
-		if(traversed(stone, path))
+		if(path.get(stone.hashCode()) != null)
 			return;
 	
-		path.add(stone);
+		path.put(stone.hashCode(), stone);
 	
 		Object call = null;
 		
@@ -294,17 +303,17 @@ public class PhilosophersStoneUtilities {
 			callTraverse(stone.publicConnections.get(i), false, packet, path, calls);
 	}
 	
-	private static void getTraverse(
+	public static void getTraverse(
 			PhilosophersStone stone,
 			boolean init,
 			ArrayList<String> tags,
-			ArrayList<PhilosophersStone> path,
+			Hashtable<Integer, PhilosophersStone> path,
 			ArrayList<PhilosophersStone> stones) {
 	
-		if(traversed(stone, path))
+		if(path.get(stone.hashCode()) != null)
 			return;
 	
-		path.add(stone);
+		path.put(stone.hashCode(), stone);
 	
 		if(tags != null) {
 			
@@ -325,16 +334,16 @@ public class PhilosophersStoneUtilities {
 			getTraverse(stone.publicConnections.get(i), false, tags, path, stones);
 	}
 	
-	private static boolean hasTraverse(
+	public static boolean hasTraverse(
 			PhilosophersStone stone,
 			boolean init,
 			ArrayList<String> tags,
-			ArrayList<PhilosophersStone> path) {
+			Hashtable<Integer, PhilosophersStone> path) {
 	
-		if(traversed(stone, path))
+		if(path.get(stone.hashCode()) != null)
 			return false;
 	
-		path.add(stone);
+		path.put(stone.hashCode(), stone);
 	
 		if(hasAllTags(stone, tags))
 			return true;
@@ -357,18 +366,7 @@ public class PhilosophersStoneUtilities {
 		return false;
 	}
 	
-	private static boolean traversed(PhilosophersStone stone, ArrayList<PhilosophersStone> path) {
-	
-		for(int i = 0; i < path.size(); i++) {
-	
-			if(path.get(i) == stone)
-				return true;
-		}
-	
-		return false;
-	}
-	
-	private static boolean hasAllTags(PhilosophersStone stone, ArrayList<String> tags) {
+	public static boolean hasAllTags(PhilosophersStone stone, ArrayList<String> tags) {
 		
 		for(int i = 0; i < tags.size(); i++) {
 			
@@ -379,7 +377,7 @@ public class PhilosophersStoneUtilities {
 		return true;
 	}
 	
-	private static ArrayList<String> formatTags(ArrayList<String> tags) {
+	public static ArrayList<String> formatTags(ArrayList<String> tags) {
 		
 		ArrayList<String> formattedTags = new ArrayList<String>();
 		
@@ -389,7 +387,7 @@ public class PhilosophersStoneUtilities {
 		return formattedTags;
 	}
 	
-	private static String formatTag(String tag) {
+	public static String formatTag(String tag) {
 		
 		String formattedTag = "";
 		
