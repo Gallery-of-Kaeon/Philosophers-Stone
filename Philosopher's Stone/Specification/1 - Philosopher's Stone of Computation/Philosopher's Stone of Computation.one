@@ -67,8 +67,8 @@
 						The on incoming function takes a list of Philosopher's Stones representing
 						a traversal path as an argument.
 						
-						It returns true if a traversal should continue through the stone it was
-						called from, and returns false otherwise.
+						It returns true if the stone it was called from should be considered part
+						of a given traversal, and returns false otherwise.
 						
 						It returns true by default.
 					-
@@ -82,8 +82,9 @@
 						list being the one the function was called from, and the last Philospher's
 						Stone in the list being the next one in the projected traversal.
 						
-						It returns true if a traversal should continue from the stone it was called
-						from to the last stone in the passed in list, and returns false otherwise.
+						It returns true if a given traversal should continue from the stone it was
+						called from to the last stone in the passed in list, and returns false
+						otherwise.
 						
 						It returns true by default.
 					-
