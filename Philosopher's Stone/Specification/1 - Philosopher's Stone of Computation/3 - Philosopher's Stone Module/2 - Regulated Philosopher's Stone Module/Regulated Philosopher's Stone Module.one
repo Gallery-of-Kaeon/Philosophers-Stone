@@ -1,0 +1,74 @@
+-
+	Regulated Philosopher's Stone Module
+-
+	-
+		Philosophy
+	-
+		-
+			A regulated Philosopher's Stone module is a Philosopher's Stone module which contains
+			two additional functions in addition to the standard function: on incoming and on
+			outgoing.
+
+			The aforementioned functions are used to restrict access to certain reigons of a given
+			regulated during a traversal of a Philosopher's Atlas.
+		-
+	-
+		Principles
+	-
+		-
+			Functions
+		-
+			-
+				On Incoming
+			-
+				-
+					The on incoming function takes a list of modules representing a traversal path,
+					as well as a value specifying any addtional information as arguments.
+					
+					It returns true if the module it was called from should be considered part of a
+					given traversal, and returns false otherwise.
+					
+					It may be redefined for each regulated Philsopher's Stone module, and may
+					perform any operations before returning.
+
+					It returns true by default.
+				-
+			-
+				On Outgoing
+			-
+				-
+					The on outgoing function takes a list of module representing a traversal path
+					as well as a value specifying any addtional information as arguments. The list
+					must contain at least two module, with the second to last module in the list
+					being the one the function was called from, and the last module in the list
+					being the next one in the projected traversal.
+					
+					It returns true if a given traversal should continue from the module it was
+					called from to the last stone in the passed in list, and returns false
+					otherwise.
+					
+					It may be redefined for each regulated Philsopher's Stone module, and may
+					perform any operations before returning.
+					
+					It returns true by default.
+				-
+		-
+			Traversals
+		-
+			-
+				When a traversal of a Philosopher's Atlas travels through a regulated Philosopher's
+				Stone module, the on incoming function of the regulated Philosopher's stone module
+				in question shall be called using a list containing every previously traversed
+				module, as well as a value specifying any addtional information. If the on incoming
+				function returns true, the traversal shall progress to the module in question.
+				
+				If a traversal has progressed past the on incoming function of a given regulated
+				Philosopher's Stone module, the on outgoing function of said regulated
+				Philosopher's Stone module must be called for every module that the regulated
+				Philosopher's Stone module in question is connected to that itself has not yet been
+				traversed. A list containing every previously traversed module, the regulated
+				Philosopher's Stone module in question, and the next module in the projected
+				traversal shall be passed to the on outgoing function, along with a value
+				specifying any addtional information. The traversal will proceed to each connection
+				that the on outgoing function returns true for.
+			-

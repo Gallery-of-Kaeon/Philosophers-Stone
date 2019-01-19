@@ -3,8 +3,8 @@ Standard Philosopher~'s Stone
 	Philosophy
 	
 		-
-			The standard Philosopher's Stone possesses functionality that exceeds the basic
-			Philosopher's Stone of Computation.
+			The standard Philosopher's Stone is a regulated Philosopher's Stone module that uses
+			the standard alias for the standard function, but possesses additional functionality.
 		-
 	
 	Principles
@@ -29,11 +29,11 @@ Standard Philosopher~'s Stone
 				Letter case and whitespace is irrelevant in tags.
 			-
 		
-		On Call Function
+		Standard Function
 			
 			-
-				The on call function provided by the standard Philosopher's Stone should take a
-				list of undefined objects instead of a single undefined object.
+				The standard function of the standard Philosopher's Stone shall expect a list of
+				values as the argument passed to it.
 			-
 		
 		Additional Functions

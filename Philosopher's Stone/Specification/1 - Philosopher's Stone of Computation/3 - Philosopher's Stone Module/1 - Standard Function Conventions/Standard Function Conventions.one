@@ -1,0 +1,29 @@
+-
+	Standard Function Conventions
+-
+	-
+		Philosophy
+	-
+		-
+			The standard function conventions define the default properties for the standard
+			function within a Philosopher's Stone module.
+		-
+	-
+		Principles
+	-
+		-
+			Standard Function Defaults
+		-
+			-
+				By default, the standard function shall perform no operations and shall return a
+				null value.
+			-
+		-
+			Standard Function Default Alias
+		-
+			-
+				The standard function default alias is the default for the alias of the standard
+				function within a Philosopher's Stone module.
+
+				The standard function default alias is "On Call".
+			-

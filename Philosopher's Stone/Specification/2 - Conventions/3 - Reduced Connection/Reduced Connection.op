@@ -5,9 +5,9 @@ Reduced Connection
 		-
 			A reduced connection is a type of connection in a Philosopher's Atlas.
 
-			If a given Philosopher's Stone may only access another by traversing through a reduced
-			connection, any packet sent from the former stone to the latter stone must be converted
-			to a string before being passed to the latter stone's on call function. Likewise, any
-			value returned by the latter stone' on call function must be converted into a string
-			before being returned to the former stone.
+			If a given module may only access another by traversing through a reduced connection,
+			any argument passed from the former module to the latter module must be converted to a
+			string before being passed to the latter module. Likewise, any value returned by the
+			latter module must be converted into a string before being returned to the former
+			module.
 		-
