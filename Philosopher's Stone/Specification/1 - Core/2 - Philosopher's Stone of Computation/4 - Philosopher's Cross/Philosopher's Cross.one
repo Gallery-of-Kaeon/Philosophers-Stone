@@ -1,0 +1,10 @@
+-
+	Philosopher's Cross
+-
+	-
+		Philosophy
+	-
+		-
+			A Philosopher's Cross is a set of data that may be read from and written to by multiple
+			parallel processes.
+		-

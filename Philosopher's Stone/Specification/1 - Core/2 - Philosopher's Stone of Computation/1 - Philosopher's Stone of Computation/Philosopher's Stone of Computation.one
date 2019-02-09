@@ -1,0 +1,13 @@
+-
+	Philosopher's Stone of Computation
+-
+	-
+		Philosophy
+	-
+		-
+			The Philosopher's Stone of Computation is a interface for dynamically invoking any
+			operation such that if said operation causes an error then said operation shall
+			terminate and said error shall be caught, and if said operation finishes successfully
+			and returns a value then said value shall be returned, and in any other case a null
+			value shall be returned.
+		-

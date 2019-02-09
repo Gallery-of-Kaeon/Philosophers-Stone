@@ -1,0 +1,11 @@
+Taggable Philosopher's Medium
+	
+	Philosophy
+	
+		-
+			A module that abides by the taggable Philosopher's Medium shall contain a list of
+			strings which act as identification tags for the module.
+
+			A module that abides by the taggable Philosopher's Medium shall be known as a tagged
+			Philosopher's Stone module.
+		-

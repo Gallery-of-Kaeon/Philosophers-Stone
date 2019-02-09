@@ -6,7 +6,10 @@
 	-
 		-
 			The standard function conventions define the default properties for the standard
-			function within a Philosopher's Stone module.
+			function within a module that abides by the standard Philosopher's Medium.
+
+			The conventions also assert that any module that abides by the standard Philosopher's
+			Medium shall be known as a standard Philosopher's Stone Module.
 		-
 	-
 		Principles
@@ -22,8 +25,8 @@
 			Standard Function Default Alias
 		-
 			-
-				The standard function default alias is the default for the alias of the standard
-				function within a Philosopher's Stone module.
+				The standard function default alias for the standard function within a standard
+				Philosopher's Stone module.
 
 				The standard function default alias is "On Call".
 			-
