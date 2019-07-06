@@ -1,7 +1,6 @@
 <h1 align="center">Philosopher's Stone</h1>
 
-The Philosopher's Stone is an object upon which a software architecture called the Philosopher's Atlas is composed.
-The Philosopher's Atlas allows for greater fault tolerance and modularity in sofware development.
+The Philosopher's Stone is a method for constructing an intranet like system within the architecture of an application using a directed graph in which any variable or module may act as a node. Said graph is referred to as a philosopher's atlas.
 
 <h2 align="center">Contents of this Repository</h2>
 
@@ -23,23 +22,16 @@ For any questions or comments please email the following address: kaeon.ace@gmai
 
 ### How does it work?
 
-Individual Philosopher's Stones act as wrappers for components of larger systems.
-
-Philosopher's Stones may be connected to one another to form a graph called a Philosopher's Atlas.
-Connections between Philosopher's Stones are one way and may either be public or private.
-
-Once connected, the Philosopher's Stones may communicate with each other by sending packets throughout the graph.
+The Philosopher's Stone API stores a global adjancency matrix in which any variable or module within a program may act as a node,
+and also provides special utilities for interacting with modules acting as nodes when the implementation of said modules is unknown.
 
 ### What advantages are there to using Philosopher's Stones?
 
-Philosopher's Stones allow the various components of an application to be isolated.
-Entire components of your application can be added and removed without causing the application to crash.
-You can even program parts of your program to interact with other parts that haven't been implemented yet.
-
-For example,
-lets say stone A activates a function in stone B by sending a packet to it.
-If you decide to modify what happens after the packet is sent,
-you can replace stone B with stone C without modifying stone A.
+Whereas in most programs modules communicate with one another by sending data to a specified endpoint,
+the Philosopher's Stone method allows modules to essentially "broadcast" to one another,
+thereby allowing modules to be added or modified without necessarily having to refactor others that are dependent upon them,
+whether mid-project or even mid-runtime.
+This method is optimal for unpredictable development circumstances and programs designed to take on new functionality at runtime.
 
 ### Has the Philosopher's Stone ever actually been used for anything?
 
