@@ -1,6 +1,6 @@
 <h1 align="center">Philosopher's Stone</h1>
 
-The Philosopher's Stone is a method for constructing an intranet like system within the architecture of an application using a directed graph in which any variable or module may act as a node. Said graph is referred to as a philosopher's atlas.
+The Philosopher's Stone is a method for constructing an intranet like system within the architecture of an application using a directed graph in which any variable or module may act as a node. Said graph is referred to as a Philosopher's Atlas.
 
 <h2 align="center">Contents of this Repository</h2>
 
