@@ -31,7 +31,7 @@ Whereas in most programs modules communicate with one another by sending data to
 the Philosopher's Stone method allows modules to essentially "broadcast" to one another via sending "packets" through graph traversals,
 thereby allowing modules to be added or modified without necessarily having to refactor others that are dependent upon them,
 whether mid-project or even mid-runtime.
-This method is optimal for unpredictable development circumstances and for programs designed to take on new functionality at runtime.
+This method is optimal for projects with unpredictable development circumstances and for programs designed to take on new functionality at runtime.
 
 ### Has the Philosopher's Stone ever actually been used for anything?
 
