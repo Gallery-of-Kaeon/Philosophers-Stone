@@ -264,7 +264,7 @@ function isTagged(stones, tagStrings) {
 	
 	for(let i = 0; i < stones.length; i++) {
 
-		if(stones[i].tags.length == 0)
+		if(stones[i].tags == null)
 			return false;
 
 		for(let j = 0; j < tagStrings.length; j++) {
