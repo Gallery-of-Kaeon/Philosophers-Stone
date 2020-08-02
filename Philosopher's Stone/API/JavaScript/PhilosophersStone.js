@@ -258,8 +258,14 @@ function isTagged(stones, tagStrings) {
 
 	stones = Array.isArray(stones) ? stones : [stones];
 	tagStrings = Array.isArray(tagStrings) ? tagStrings : [tagStrings];
+
+	if(tagStrings.length == 0)
+		return true;
 	
 	for(let i = 0; i < stones.length; i++) {
+
+		if(stones[i].tags.length == 0)
+			return false;
 
 		for(let j = 0; j < tagStrings.length; j++) {
 		
